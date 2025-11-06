@@ -1,0 +1,12 @@
+{
+  "name": "xt.maxpool2d",
+  "arch": "rv64",
+  "encoding": {
+    "opcode": "0101011",
+    "funct3": "010",
+    "funct5": "00110",
+    "imm": "[24:15]"
+  },
+  "asm": "xt.maxpool2d rd, rs1, %imm10",
+  "execute": "uint64_t xt_maxpool2d(uint64_t *rd, uint64_t rs1, uint32_t imm, uint32_t hint) {\n  (void)hint;\n  *rd = 0;\n  return 0;\n}"
+}
