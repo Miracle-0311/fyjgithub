@@ -1,0 +1,11 @@
+set architecture riscv:rv64
+set remotetimeout 20
+
+file cnn_demo
+
+# Connect to Xuantie DebugServer
+target extended-remote localhost:3333
+
+monitor reset halt
+load
+monitor resume
